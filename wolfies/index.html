@@ -1,159 +1,319 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wolfie's All Natural Dog Treats</title>
-    <meta name="description" content="Handmade all-natural dog treats made in South Boston." />
-    <style>
-      :root {
-        --bg: #f8f3ea;
-        --ink: #2a241f;
-        --muted: #6d6258;
-        --accent: #8a4f2b;
-        --card: #fffaf4;
-        --line: #e7dccf;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: Georgia, "Times New Roman", serif;
-        color: var(--ink);
-        background: linear-gradient(180deg, #fffaf4 0%, var(--bg) 100%);
-      }
-      .wrap {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 28px 20px 40px;
-      }
-      header {
-        border-bottom: 1px solid var(--line);
-        padding-bottom: 18px;
-        margin-bottom: 28px;
-      }
-      .eyebrow {
-        text-transform: uppercase;
-        letter-spacing: 0.14em;
-        font-size: 12px;
-        color: var(--accent);
-        margin: 0 0 8px;
-      }
-      h1 {
-        font-size: clamp(36px, 6vw, 58px);
-        line-height: 0.98;
-        margin: 0 0 12px;
-      }
-      .lede {
-        font-size: 20px;
-        line-height: 1.5;
-        max-width: 760px;
-        margin: 0;
-        color: var(--muted);
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 1.25fr 0.9fr;
-        gap: 18px;
-      }
-      .card {
-        background: rgba(255, 250, 244, 0.86);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 20px;
-      }
-      h2 {
-        font-size: 24px;
-        margin: 0 0 12px;
-      }
-      p { line-height: 1.62; margin: 0 0 14px; }
-      ul {
-        margin: 0;
-        padding-left: 20px;
-        line-height: 1.7;
-      }
-      .stockists {
-        display: grid;
-        gap: 10px;
-        margin-top: 10px;
-      }
-      .stockist {
-        border-top: 1px solid var(--line);
-        padding-top: 10px;
-      }
-      .badge {
-        display: inline-block;
-        background: #f3e5d6;
-        color: var(--accent);
-        border-radius: 999px;
-        padding: 6px 10px;
-        font-size: 12px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-      footer {
-        border-top: 1px solid var(--line);
-        margin-top: 28px;
-        padding-top: 18px;
-        color: var(--muted);
-        font-size: 15px;
-      }
-      a { color: var(--accent); text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      @media (max-width: 760px) {
-        .grid { grid-template-columns: 1fr; }
-        .lede { font-size: 18px; }
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <header>
-        <p class="eyebrow">South Boston • handmade • all natural</p>
-        <h1>Wolfie's All Natural Dog Treats</h1>
-        <p class="lede">Homemade in South Boston for dogs that like simple ingredients and a treat with a little neighborhood pride.</p>
-      </header>
-
-      <section class="grid">
-        <div class="card">
-          <span class="badge">Our story</span>
-          <h2>Made for Leyna. Kept going for the dogs that followed.</h2>
-          <p>Jane started Wolfie's after making chicken treats at home for Leyna and wanting something she felt good about giving her own dog. That turned into a small South Boston business built around real ingredients, small-batch making, and a lot of word of mouth.</p>
-          <p>Mina appears on the packaging, and the treats have stayed close to the neighborhood ever since.</p>
-          <p>We make:</p>
-          <ul>
-            <li>100% all-natural chicken treats</li>
-            <li>pork treats</li>
-            <li>turkey meatballs for dogs that need an alternative to chicken</li>
-          </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wolfie's All Natural Dog Treats</title>
+  <meta name="description" content="Small-batch all-natural dog treats made in South Boston." />
+  <meta name="theme-color" content="#0f1720" />
+  <style>
+    :root {
+      --bg: #0f1720;
+      --bg2: #161f2b;
+      --card: rgba(255, 250, 244, 0.06);
+      --card-strong: rgba(255, 250, 244, 0.09);
+      --ink: #f6efe6;
+      --muted: #c7baa9;
+      --soft: #e7dccf;
+      --accent: #d6a26a;
+      --accent-2: #7fd3c7;
+      --line: rgba(231, 220, 207, 0.12);
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214, 162, 106, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(127, 211, 199, 0.12), transparent 30%),
+        linear-gradient(180deg, var(--bg) 0%, #111b25 58%, #0d141c 100%);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+    .wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 28px 20px 44px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--card-strong), var(--card));
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .hero-main {
+      padding: 32px;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-main::after {
+      content: "";
+      position: absolute;
+      inset: auto -120px -120px auto;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(214,162,106,0.22) 0%, rgba(214,162,106,0) 70%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(46px, 7vw, 80px);
+      line-height: 0.94;
+      letter-spacing: -0.05em;
+      max-width: 8ch;
+    }
+    .lede {
+      margin: 18px 0 0;
+      max-width: 44rem;
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.6;
+      color: var(--soft);
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(231,220,207,0.14);
+      background: rgba(255,250,244,0.06);
+      color: var(--soft);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    .chip strong { color: var(--ink); font-weight: 600; }
+    .hero-side {
+      display: grid;
+      gap: 18px;
+    }
+    .card {
+      padding: 22px;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+    .card p {
+      margin: 0;
+      line-height: 1.7;
+      color: var(--soft);
+    }
+    .story {
+      display: grid;
+      gap: 14px;
+    }
+    .story p { margin: 0; }
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .stack {
+      display: grid;
+      gap: 18px;
+    }
+    .list {
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.55;
+      color: var(--soft);
+    }
+    .dot {
+      width: 9px;
+      height: 9px;
+      margin-top: 0.42rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--accent), #f1c28f);
+      box-shadow: 0 0 0 4px rgba(214,162,106,0.14);
+      flex: 0 0 auto;
+    }
+    .aside-note {
+      border-left: 1px solid var(--line);
+      padding-left: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .contact-item {
+      padding: 16px 0 0;
+      border-top: 1px solid var(--line);
+      line-height: 1.7;
+      color: var(--soft);
+    }
+    .label {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+    footer {
+      margin-top: 18px;
+      padding: 18px 4px 0;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 880px) {
+      .hero, .section-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-main { min-height: auto; }
+      h1 { max-width: none; }
+    }
+    @media (max-width: 620px) {
+      .wrap { padding: 18px 14px 28px; }
+      .hero-main, .card { padding: 18px; border-radius: 20px; }
+      .lede { font-size: 17px; }
+      h1 { font-size: clamp(38px, 14vw, 58px); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="panel hero-main">
+        <div>
+          <p class="eyebrow">South Boston • small batch • all natural</p>
+          <h1>Wolfie's All Natural Dog Treats</h1>
+          <p class="lede">A sharper, quieter home for a neighborhood dog treat brand that already has the right instinct: keep it simple, keep it real, and make it good enough to earn trust fast.</p>
         </div>
+        <div class="hero-meta">
+          <span class="chip"><strong>Made in:</strong> South Boston</span>
+          <span class="chip"><strong>Style:</strong> clean, premium, direct</span>
+          <span class="chip"><strong>Built for:</strong> quick trust + easy contact</span>
+        </div>
+      </div>
 
-        <div class="card">
-          <span class="badge">Find us nearby</span>
-          <h2>Stockists</h2>
-          <div class="stockists">
-            <div class="stockist">
-              <strong>Lambert's</strong><br />
-              South Boston
-            </div>
-            <div class="stockist">
-              <strong>Deja Brew</strong><br />
-              South Boston
-            </div>
+      <aside class="hero-side">
+        <div class="panel card">
+          <span class="label">What this is</span>
+          <h2>One clear place for the brand.</h2>
+          <div class="story">
+            <p>Wolfie's started at home when Jane was making chicken treats for Leyna and wanted something she felt good about giving her own dog.</p>
+            <p>It stayed close to the neighborhood, grew by word of mouth, and kept the ingredient story simple on purpose.</p>
           </div>
         </div>
-      </section>
+        <div class="panel card">
+          <span class="label">At a glance</span>
+          <p>For dogs that like real ingredients and for people who want a site that feels confident, polished, and easy to understand in a few seconds.</p>
+        </div>
+      </aside>
+    </section>
 
-      <section class="card" style="margin-top:18px;">
-        <span class="badge">Contact</span>
-        <h2>Want to stock Wolfie's or ask about an order?</h2>
-        <p>Email: <a href="mailto:wolfiesallnaturaltreats@gmail.com">wolfiesallnaturaltreats@gmail.com</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/WolfiesAllNaturalTreats/">Wolfie's All Natural Treats</a></p>
-      </section>
+    <section class="section-grid">
+      <div class="panel card">
+        <span class="label">Why it works</span>
+        <h2>Trust first. Noise never.</h2>
+        <ul class="list">
+          <li><span class="dot"></span><span>Clear business name, clean hierarchy, and no extra clutter.</span></li>
+          <li><span class="dot"></span><span>Fast-loading page with no external scripts, images, or app baggage.</span></li>
+          <li><span class="dot"></span><span>Designed to feel like the brand owns the space, not like a template owns the brand.</span></li>
+        </ul>
+      </div>
 
-      <footer>
-        Wolfie's All Natural Dog Treats • South Boston, MA • wolfiesallnaturaltreats@gmail.com
-      </footer>
-    </main>
-  </body>
+      <div class="panel card">
+        <span class="label">What’s in the mix</span>
+        <h2>Simple ingredients, handled well.</h2>
+        <ul class="list">
+          <li><span class="dot"></span><span>100% all-natural chicken treats</span></li>
+          <li><span class="dot"></span><span>pork treats</span></li>
+          <li><span class="dot"></span><span>turkey meatballs for dogs that need an alternative to chicken</span></li>
+        </ul>
+        <p class="aside-note" style="margin-top:16px;">Mina appears on the packaging, and the brand has kept its neighborhood identity intact.</p>
+      </div>
+    </section>
+
+    <section class="contact-grid">
+      <div class="panel card">
+        <span class="label">Stockists</span>
+        <h2>Find Wolfie's nearby</h2>
+        <div class="contact-item">
+          <strong>Lambert's</strong><br />South Boston
+        </div>
+        <div class="contact-item">
+          <strong>Deja Brew</strong><br />South Boston
+        </div>
+      </div>
+
+      <div class="panel card">
+        <span class="label">Contact</span>
+        <h2>Get in touch</h2>
+        <div class="contact-item">
+          <strong>Email</strong><br />
+          <a href="mailto:wolfiesallnaturaltreats@gmail.com">wolfiesallnaturaltreats@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>Facebook</strong><br />
+          <a href="https://www.facebook.com/WolfiesAllNaturalTreats/">Wolfie's All Natural Treats</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-row">
+        <span>Wolfie's All Natural Dog Treats</span>
+        <span>South Boston, MA</span>
+        <span>wolfiesallnaturaltreats@gmail.com</span>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>
