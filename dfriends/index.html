@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>D'Friends Barber Shop — Jamaica Plain</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--green:#2D6A4F;--green-light:#3A8A65;--green-dark:#1E4D39;--off-white:#F9F7F4;--dark:#111;--gray:#666;--light-border:#e8e4df}
+    body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--off-white);color:var(--dark);-webkit-font-smoothing:antialiased}
+    nav{position:sticky;top:0;z-index:100;background:var(--off-white);border-bottom:1px solid var(--light-border);display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
+    .nav-name{font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--dark)}
+    .nav-cta{background:var(--green);color:#fff;padding:9px 20px;font-size:13px;font-weight:500;letter-spacing:.04em;text-decoration:none;transition:background .2s}
+    .nav-cta:hover{background:var(--green-light)}
+    .hero{background:var(--green);color:#fff;padding:80px 24px 72px;text-align:center}
+    .hero-eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-bottom:18px}
+    .hero h1{font-size:clamp(36px,7vw,64px);font-weight:300;letter-spacing:-.02em;line-height:1.05;margin-bottom:20px}
+    .hero h1 strong{font-weight:700}
+    .hero-sub{font-size:16px;opacity:.8;margin-bottom:36px}
+    .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+    .btn-white{display:inline-block;padding:13px 28px;background:#fff;color:var(--green);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:opacity .2s}
+    .btn-white:hover{opacity:.85}
+    .btn-outline{display:inline-block;padding:13px 28px;border:1.5px solid rgba(255,255,255,.5);color:#fff;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:border-color .2s}
+    .btn-outline:hover{border-color:#fff}
+    .strip{display:flex;flex-wrap:wrap;justify-content:center;gap:0;border-bottom:1px solid var(--light-border)}
+    .strip-item{flex:1;min-width:160px;padding:28px 20px;text-align:center;border-right:1px solid var(--light-border)}
+    .strip-item:last-child{border-right:none}
+    .strip-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
+    .strip-value{font-size:15px;font-weight:500;color:var(--dark)}
+    .section{padding:64px 24px;max-width:900px;margin:0 auto}
+    .section-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:16px;font-weight:500}
+    .section h2{font-size:clamp(24px,4vw,36px);font-weight:300;letter-spacing:-.01em;margin-bottom:20px;line-height:1.2}
+    .section p{font-size:16px;color:#444;line-height:1.7;max-width:600px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--light-border);margin-top:40px}
+    .service{background:var(--off-white);padding:28px 24px}
+    .service-name{font-size:16px;font-weight:500;margin-bottom:6px}
+    .service-desc{font-size:14px;color:var(--gray);line-height:1.5}
+    .contact{background:var(--dark);color:#fff;padding:72px 24px;text-align:center}
+    .contact h2{font-size:clamp(28px,5vw,44px);font-weight:300;margin-bottom:12px}
+    .contact p{font-size:16px;opacity:.65;margin-bottom:40px}
+    .contact-phone{font-size:clamp(28px,6vw,52px);font-weight:300;letter-spacing:-.02em;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:4px;display:inline-block;margin-bottom:32px;transition:border-color .2s}
+    .contact-phone:hover{border-color:#fff}
+    .hours-grid{display:inline-flex;flex-direction:column;gap:6px;text-align:left;margin-top:8px}
+    .hour-row{font-size:14px;opacity:.6}
+    footer{background:var(--green-dark);color:rgba(255,255,255,.4);text-align:center;padding:20px 24px;font-size:12px;letter-spacing:.06em}
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="nav-name">D'Friends Barber Shop</span>
+    <a href="tel:6175243420" class="nav-cta">Call Now</a>
+  </nav>
+
+  <section class="hero">
+    <p class="hero-eyebrow">Jamaica Plain, Boston</p>
+    <h1>Your neighborhood<br><strong>barber shop.</strong></h1>
+    <p class="hero-sub">Walk-ins welcome. Quality cuts, every time.</p>
+    <div class="hero-actions">
+      <a href="tel:6175243420" class="btn-white">Call (617) 524-3420</a>
+      <a href="https://maps.google.com/?q=366+Centre+St+Jamaica+Plain+MA" class="btn-outline">Get Directions</a>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="strip-item"><p class="strip-label">Address</p><p class="strip-value">366 Centre St, JP</p></div>
+    <div class="strip-item"><p class="strip-label">Mon – Sat</p><p class="strip-value">9am – 7pm</p></div>
+    <div class="strip-item"><p class="strip-label">Sunday</p><p class="strip-value">9am – 6pm</p></div>
+    <div class="strip-item"><p class="strip-label">Walk-ins</p><p class="strip-value">Always Welcome</p></div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">About</p>
+    <h2>A staple of<br>Centre Street.</h2>
+    <p>D'Friends has been serving Jamaica Plain with quality cuts and a welcoming atmosphere. Whether you're a regular or walking in for the first time, you'll feel at home.</p>
+
+    <div class="services">
+      <div class="service"><p class="service-name">Haircut</p><p class="service-desc">Classic and modern cuts for all hair types</p></div>
+      <div class="service"><p class="service-name">Fade</p><p class="service-desc">Clean fades, tapers, and line-ups</p></div>
+      <div class="service"><p class="service-name">Beard Trim</p><p class="service-desc">Shape and clean up your beard</p></div>
+      <div class="service"><p class="service-name">Kids Cuts</p><p class="service-desc">Patient, friendly service for the little ones</p></div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Come see us.</h2>
+    <p>366 Centre St, Jamaica Plain, MA 02130</p>
+    <a href="tel:6175243420" class="contact-phone">(617) 524-3420</a>
+    <div class="hours-grid">
+      <span class="hour-row">Monday – Saturday &nbsp;&nbsp;9am – 7pm</span>
+      <span class="hour-row">Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9am – 6pm</span>
+    </div>
+  </div>
+
+  <footer>© D'Friends Barber Shop · Jamaica Plain, Boston</footer>
+</body>
+</html>
