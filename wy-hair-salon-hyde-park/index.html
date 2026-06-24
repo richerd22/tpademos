@@ -21,31 +21,24 @@
         background: var(--bg);
         -webkit-font-smoothing: antialiased;
       }
-      .grain {
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-        background-image: url("https://grainy-gradients.vercel.app/noise.svg");
-        opacity: 0.05; pointer-events: none; z-index: 100;
-      }
       .wrap { max-width: 1000px; margin: 0 auto; padding: 80px 24px; }
       header { margin-bottom: 64px; }
-      .eyebrow { text-transform: uppercase; letter-spacing: 0.2em; font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 16px; }
+      .eyebrow { font-size: 13px; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
       h1 { font-size: clamp(48px, 10vw, 84px); line-height: 0.9; margin: 0 0 24px; letter-spacing: -0.04em; font-weight: 800; }
       .lede { font-size: 24px; line-height: 1.4; max-width: 700px; color: var(--muted); }
       .grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; }
-      .card { background: var(--card); border: 1px solid var(--line); padding: 48px; border-radius: 4px; position: relative; overflow: hidden; }
+      .card { background: var(--card); border: 1px solid var(--line); padding: 48px; border-radius: 4px; }
       h2 { font-size: 32px; margin: 0 0 20px; font-weight: 700; letter-spacing: -0.02em; }
       p { line-height: 1.6; margin: 0 0 20px; font-size: 19px; }
-      .cta { display: inline-block; background: var(--ink); color: var(--bg); padding: 20px 40px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 16px; letter-spacing: 0.05em; transition: opacity 0.2s; }
-      .cta:hover { opacity: 0.9; }
-      footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--line); color: var(--accent); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; }
+      .cta { display: inline-block; background: var(--ink); color: var(--bg); padding: 20px 40px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 16px; }
+      footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--line); color: var(--accent); font-size: 14px; text-transform: uppercase; }
       @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .wrap { padding: 40px 20px; } }
     </style>
   </head>
   <body>
-    <div class="grain"></div>
     <main class="wrap">
       <header>
-        <p class="eyebrow">Modern • Minimal • Hyde Park</p>
+        <p class="eyebrow">Hyde Park</p>
         <h1>WY Hair Salon</h1>
         <p class="lede">Precision styling and modern barbering in the heart of River St. We define the Hyde Park aesthetic.</p>
       </header>
@@ -53,12 +46,13 @@
         <div class="card">
           <h2>Modern Precision.</h2>
           <p>WY Hair Salon & Barbershop combines traditional technique with a clean, contemporary approach. From creative styling to sharp, technical fades, we ensure every client leaves with a look tailored to their lifestyle.</p>
-          <a href="tel:6173649472" class="cta">Book Appointment</a>
+          <a href="tel:6173649472" class="cta">Call: (617) 364-9472</a>
         </div>
         <div class="card">
-          <h2>Location</h2>
-          <p><strong>River Street</strong><br />Hyde Park, MA 02136</p>
-          <p><strong>Hours</strong><br />Tue-Sat: 9am - 6pm</p>
+          <h2>1236 River St</h2>
+          <p>Hyde Park, MA 02136</p>
+          <p><strong>Hours:</strong><br />Tue-Sat: 9am - 6pm</p>
+          <a href="tel:6173649472" style="color: var(--accent); font-weight: bold;">(617) 364-9472</a>
         </div>
       </section>
       <footer>WY Hair Salon & Barbershop • Boston, MA</footer>
