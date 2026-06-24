@@ -1,15 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Nails - Demo</title>
-    <style>body { font-family: sans-serif; padding: 2rem; text-align: center; } .cta { background: #ff69b4; color: #fff; padding: 1rem; text-decoration: none; border-radius: 5px; }</style>
-</head>
-<body>
-    <h1>Fantasy Nails</h1>
-    <p>Luxury nail care and spa services in Roxbury.</p>
-    <p>Location: 1208 Columbus Ave, Roxbury, MA 02120</p>
-    <a href="tel:6174421111" class="cta">Call: (617) 442-1111</a>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fantasy Nails | Roxbury</title>
+    <meta name="description" content="Luxury nail care and spa services in the heart of Roxbury." />
+    <style>
+      :root {
+        --bg: #fff5f7;
+        --ink: #3a1a1a;
+        --muted: #8a6262;
+        --accent: #db2777;
+        --card: #ffffff;
+        --line: #fce7f3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Didot", serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      header {
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        font-size: 14px;
+        color: var(--accent);
+        margin: 0 0 16px;
+      }
+      h1 {
+        font-size: clamp(40px, 8vw, 64px);
+        margin: 0 0 16px;
+        font-weight: 400;
+        font-style: italic;
+      }
+      .lede {
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 0 auto;
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      }
+      h2 {
+        font-size: 32px;
+        margin: 0 0 20px;
+        font-weight: 400;
+      }
+      p { line-height: 1.7; margin: 0 0 20px; font-size: 18px; }
+      .badge {
+        display: inline-block;
+        background: #fdf2f8;
+        color: var(--accent);
+        padding: 6px 16px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        border-radius: 99px;
+        margin-bottom: 16px;
+      }
+      .cta-button {
+        display: block;
+        text-align: center;
+        background: var(--accent);
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 12px;
+        font-size: 20px;
+        margin-top: 24px;
+      }
+      footer {
+        margin-top: 60px;
+        padding: 40px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <p class="eyebrow">Professional Nail Care</p>
+        <h1>Fantasy Nails</h1>
+        <p class="lede">Elegance and relaxation for your hands and feet. Located in Roxbury, dedicated to your beauty.</p>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <span class="badge">The Experience</span>
+          <h2>Treat Yourself.</h2>
+          <p>From luxury manicures to rejuvenating pedicures, Fantasy Nails offers a full range of spa services designed to make you feel your best. Our expert technicians use top-quality products in a clean, welcoming environment.</p>
+          <a href="tel:6174421111" class="cta-button">Call: (617) 442-1111</a>
+        </div>
+
+        <div class="card">
+          <span class="badge">Visit Us</span>
+          <h2>Our Location</h2>
+          <p><strong>Address:</strong><br />1208 Columbus Ave<br />Roxbury, MA 02120</p>
+          <p><strong>Hours:</strong><br />Mon-Sat: 10am - 8pm<br />Sun: 11am - 6pm</p>
+        </div>
+      </section>
+
+      <footer>
+        Fantasy Nails & Spa • Roxbury, MA
+      </footer>
+    </main>
+  </body>
 </html>

@@ -1,15 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Nuevo Estilo Barber Shop - Demo</title>
-    <style>body { font-family: sans-serif; padding: 2rem; text-align: center; } .cta { background: #000; color: #fff; padding: 1rem; text-decoration: none; border-radius: 5px; }</style>
-</head>
-<body>
-    <h1>El Nuevo Estilo Barber Shop</h1>
-    <p>The best fade in Dorchester. Experience the neighborhood's finest.</p>
-    <p>Location: 218 Bowdoin St, Dorchester, MA 02122</p>
-    <a href="tel:6172889600" class="cta">Call to Book: (617) 288-9600</a>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El Nuevo Estilo Barber Shop | Dorchester</title>
+    <meta name="description" content="Quality haircuts and community in Dorchester since 2011." />
+    <style>
+      :root {
+        --bg: #f8f8f8;
+        --ink: #1a1a1a;
+        --muted: #666666;
+        --accent: #b91c1c;
+        --card: #ffffff;
+        --line: #e5e5e5;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 24px;
+        margin-bottom: 40px;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 14px;
+        color: var(--accent);
+        margin: 0 0 12px;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: clamp(40px, 8vw, 72px);
+        line-height: 0.95;
+        margin: 0 0 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      .lede {
+        font-size: 22px;
+        line-height: 1.4;
+        max-width: 800px;
+        margin: 0;
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 24px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 32px;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      }
+      h2 {
+        font-size: 28px;
+        margin: 0 0 16px;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+      }
+      p { line-height: 1.6; margin: 0 0 16px; font-size: 18px; }
+      .badge {
+        display: inline-block;
+        background: var(--ink);
+        color: white;
+        padding: 4px 12px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+      .cta-button {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+        transition: background 0.2s;
+      }
+      .cta-button:hover { background: #991b1b; }
+      footer {
+        margin-top: 60px;
+        padding-top: 32px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        text-align: center;
+      }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .wrap { padding: 24px 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <p class="eyebrow">Dorchester • Barber Shop • Community</p>
+        <h1>El Nuevo Estilo</h1>
+        <p class="lede">Classic cuts, sharp fades, and a neighborhood staple in Dorchester. We keep you looking your best.</p>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <span class="badge">The Shop</span>
+          <h2>Quality Cuts, No Compromise.</h2>
+          <p>El Nuevo Estilo has been serving the Dorchester community with pride. We specialize in all hair types, offering everything from classic tapers and fades to beard trims and hot towel shaves.</p>
+          <p>Our barbers are craftsmen dedicated to the details that make a haircut stand out.</p>
+          <a href="tel:6172889600" class="cta-button">Call to Book: (617) 288-9600</a>
+        </div>
+
+        <div class="card">
+          <span class="badge">Visit Us</span>
+          <h2>Location & Hours</h2>
+          <p><strong>Address:</strong><br />218 Bowdoin St<br />Dorchester, MA 02122</p>
+          <p><strong>Hours:</strong><br />Mon-Sat: 9am - 7pm<br />Sun: 10am - 4pm</p>
+        </div>
+      </section>
+
+      <footer>
+        &copy; 2026 El Nuevo Estilo Barber Shop • 218 Bowdoin St, Dorchester, MA
+      </footer>
+    </main>
+  </body>
 </html>
