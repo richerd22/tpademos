@@ -1,24 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Boston Barbershop | Premium Men's Grooming</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Cabinet+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>South Boston Barbershop - 149 Dorchester St, Southie</title>
+    <meta name="description" content="South Boston Barbershop at 149 Dorchester St. Haircuts, beard shaping and head shaves. Book online in a minute." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="South Boston Barbershop" />
+    <meta property="og:description" content="Haircuts, beard shaping and head shaves at 149 Dorchester St in South Boston. Book online in a minute." />
+    <meta property="og:site_name" content="South Boston Barbershop" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>" />
     <style>
-        :root { --bg: #121212; --text: #e0e0e0; --accent: #3498db; }
-        body { background: var(--bg); color: var(--text); font-family: 'Cabinet Grotesk', sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
-        .container { padding: 2rem; max-width: 600px; }
-        h1 { font-family: 'Syne', sans-serif; font-size: 4rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
-        p { font-size: 1.2rem; line-height: 1.6; opacity: 0.8; }
-        .cta { margin-top: 2rem; display: inline-block; padding: 1rem 2rem; border: 1px solid var(--text); color: var(--text); text-decoration: none; font-weight: bold; }
+      :root {
+        --bg: #f4f4f0;
+        --panel: #ffffff;
+        --ink: #191d24;
+        --muted: #5b616c;
+        --accent: #143a66;
+        --red: #a52a2a;
+        --line: #dfdfd8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 30px 20px 44px; }
+      header { border-bottom: 3px solid var(--accent); padding-bottom: 22px; margin-bottom: 26px; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .18em; font-size: 12px; color: var(--red); margin: 0 0 10px; font-weight: 600; }
+      h1 { font-size: clamp(32px, 6vw, 54px); line-height: 1.02; margin: 0 0 14px; letter-spacing: -.01em; }
+      .lede { font-size: 19px; line-height: 1.5; max-width: 680px; margin: 0 0 18px; color: var(--muted); }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn { display: inline-block; text-decoration: none; border-radius: 8px; padding: 13px 20px; font-size: 16px; font-weight: 600; }
+      .btn-solid { background: var(--accent); color: #fff; }
+      .btn-ghost { color: var(--accent); border: 2px solid var(--accent); padding: 11px 18px; }
+      .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; align-items: start; }
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+      .card + .card { margin-top: 18px; }
+      h2 { font-size: 22px; margin: 0 0 14px; line-height: 1.2; }
+      p { line-height: 1.6; margin: 0 0 14px; }
+      p:last-child { margin-bottom: 0; }
+      .badge { display: inline-block; background: #e8eef6; color: var(--accent); border-radius: 999px; padding: 6px 11px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; margin-bottom: 12px; }
+      .service { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding: 12px 0; }
+      .service:first-of-type { border-top: 0; padding-top: 0; }
+      .service .name { font-weight: 600; }
+      .service .time { color: var(--muted); font-size: 14px; display: block; margin-top: 2px; }
+      .service .price { font-weight: 700; color: var(--accent); white-space: nowrap; }
+      .quote { border-left: 3px solid var(--red); padding-left: 14px; margin: 0; font-style: italic; color: var(--muted); }
+      .note { color: var(--muted); font-size: 15px; }
+      .contact-lines { font-size: 17px; line-height: 1.9; }
+      footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 18px; color: var(--muted); font-size: 15px; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      @media (max-width: 740px) {
+        .grid { grid-template-columns: 1fr; }
+        .lede { font-size: 17px; }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <p class="eyebrow">Southie &bull; walk in or book online</p>
         <h1>South Boston Barbershop</h1>
-        <p>Precision cuts and traditional shaves in the heart of Southie. The neighborhood's premier destination for modern grooming.</p>
-        <a href="#" class="cta">Book Appointment</a>
-    </div>
-</body>
+        <p class="lede">Clean cuts and sharp beard work on Dorchester Street - a neighborhood shop where you can book a chair online and be in and out on your schedule.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="https://booksy.com/en-us/1175155_south-boston-barbershop_barber-shop_22412_boston">Book a chair on Booksy</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=South+Boston+Barbershop+149+Dorchester+St+South+Boston+MA+02127">Get directions</a>
+        </div>
+      </header>
+
+      <section class="grid">
+        <div>
+          <div class="card">
+            <span class="badge">Services</span>
+            <h2>Cuts &amp; prices</h2>
+            <div class="service">
+              <div><span class="name">Haircut</span><span class="time">40 min</span></div>
+              <div class="price">$35</div>
+            </div>
+            <div class="service">
+              <div><span class="name">Beard shaping</span><span class="time">30 min</span></div>
+              <div class="price">$25</div>
+            </div>
+            <div class="service">
+              <div><span class="name">Head shave</span><span class="time">30 min</span></div>
+              <div class="price">$25</div>
+            </div>
+            <p class="note" style="margin-top:14px;">Book a time on <a href="https://booksy.com/en-us/1175155_south-boston-barbershop_barber-shop_22412_boston">Booksy</a> - live availability is always there. Worth having cash on you.</p>
+          </div>
+
+          <div class="card">
+            <span class="badge">From a customer</span>
+            <h2>Word on the street</h2>
+            <blockquote class="quote">"Good cut, friendly guys. Only take cash though."</blockquote>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <span class="badge">Find the shop</span>
+            <h2>149 Dorchester St</h2>
+            <p class="contact-lines">
+              149 Dorchester St, #1<br />
+              South Boston, MA 02127
+            </p>
+            <p class="note"><a href="https://www.google.com/maps/search/?api=1&amp;query=South+Boston+Barbershop+149+Dorchester+St+South+Boston+MA+02127">Directions on Google Maps</a></p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Booking</span>
+            <h2>Reserve online</h2>
+            <p>Pick your service and time on the shop's Booksy page - it shows real openings, so there is no waiting around.</p>
+            <p class="contact-lines"><a href="https://booksy.com/en-us/1175155_south-boston-barbershop_barber-shop_22412_boston">Book on Booksy</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        South Boston Barbershop &bull; 149 Dorchester St #1, South Boston, MA 02127
+      </footer>
+    </main>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "South Boston Barbershop",
+      "description": "Barbershop on Dorchester Street in South Boston - haircuts, beard shaping and head shaves, with online booking.",
+      "address": { "@type": "PostalAddress", "streetAddress": "149 Dorchester St #1", "addressLocality": "Boston", "addressRegion": "MA", "postalCode": "02127", "addressCountry": "US" },
+      "sameAs": ["https://booksy.com/en-us/1175155_south-boston-barbershop_barber-shop_22412_boston"]
+    }
+    </script>
+  </body>
 </html>
