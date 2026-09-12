@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>El Nuevo Estilo Barber Shop | Dorchester</title>
+    <title>El Nuevo Estilo Barbershop - Dorchester, Boston</title>
+    <meta name="description" content="El Nuevo Estilo Barbershop, 967 Dorchester Ave, Dorchester. Cutting in the neighborhood since 2013. 5.0 stars on Booksy. Book online or call (617) 533-8572." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="El Nuevo Estilo Barbershop" />
+    <meta property="og:description" content="Dorchester's barbershop on Dorchester Ave since 2013. 5.0 stars from 300+ reviews on Booksy. Book online or call (617) 533-8572." />
+    <meta property="og:site_name" content="El Nuevo Estilo Barbershop" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>" />
     <style>
       :root {
-        --bg: #f8f8f8;
-        --ink: #1a1a1a;
-        --muted: #666666;
-        --accent: #b91c1c;
-        --card: #ffffff;
-        --line: #e5e5e5;
+        --bg: #121212;
+        --panel: #1d1d1d;
+        --ink: #f4f1ec;
+        --muted: #a8a29a;
+        --accent: #d43a2f;
+        --line: #2c2c2c;
       }
       * { box-sizing: border-box; }
       body {
@@ -20,42 +27,121 @@
         color: var(--ink);
         background: var(--bg);
       }
-      .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
-      header { border-bottom: 2px solid var(--ink); padding-bottom: 24px; margin-bottom: 40px; }
-      .eyebrow { font-size: 14px; color: var(--accent); margin: 0 0 12px; font-weight: 700; text-transform: uppercase; }
-      h1 { font-size: clamp(40px, 8vw, 72px); line-height: 0.95; margin: 0 0 16px; font-weight: 900; text-transform: uppercase; }
-      .lede { font-size: 22px; line-height: 1.4; max-width: 800px; margin: 0; color: var(--muted); }
-      .grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; }
-      .card { background: var(--card); border: 1px solid var(--line); padding: 32px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
-      h2 { font-size: 28px; margin: 0 0 16px; text-transform: uppercase; letter-spacing: -0.02em; }
-      p { line-height: 1.6; margin: 0 0 16px; font-size: 18px; }
-      .cta-button { display: inline-block; background: var(--accent); color: white; padding: 16px 32px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 18px; transition: background 0.2s; }
-      .cta-button:hover { background: #991b1b; }
-      footer { margin-top: 60px; padding-top: 32px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; }
-      @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .wrap { padding: 24px 16px; } }
+      .wrap { max-width: 940px; margin: 0 auto; padding: 30px 20px 44px; }
+      header { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 26px; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .18em; font-size: 12px; color: var(--accent); margin: 0 0 10px; font-weight: 700; }
+      h1 { font-size: clamp(36px, 7vw, 62px); line-height: 0.98; margin: 0 0 14px; text-transform: uppercase; font-weight: 900; letter-spacing: -0.01em; }
+      .lede { font-size: 20px; line-height: 1.5; max-width: 700px; margin: 0 0 18px; color: var(--muted); }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn { display: inline-block; text-decoration: none; border-radius: 8px; padding: 13px 20px; font-size: 16px; border: 1px solid var(--accent); }
+      .btn-solid { background: var(--accent); color: #fff; font-weight: 700; }
+      .btn-ghost { color: var(--accent); }
+      .grid { display: grid; grid-template-columns: 1.15fr .95fr; gap: 18px; align-items: start; }
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+      .card + .card { margin-top: 18px; }
+      h2 { font-size: 23px; margin: 0 0 12px; line-height: 1.2; }
+      p { line-height: 1.62; margin: 0 0 14px; }
+      p:last-child { margin-bottom: 0; }
+      .badge { display: inline-block; background: #2a1513; color: var(--accent); border-radius: 999px; padding: 6px 11px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; font-weight: 700; }
+      .prices { width: 100%; border-collapse: collapse; font-size: 16px; }
+      .prices td { padding: 9px 0; border-bottom: 1px solid var(--line); }
+      .prices tr:last-child td { border-bottom: none; }
+      .prices td:last-child { text-align: right; color: var(--ink); font-weight: 700; white-space: nowrap; }
+      .quote { border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 16px; font-style: italic; color: var(--ink); }
+      .quote:last-child { margin-bottom: 0; }
+      .note { color: var(--muted); font-size: 15px; }
+      .contact-lines { font-size: 17px; line-height: 1.9; }
+      footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 18px; color: var(--muted); font-size: 15px; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .lede { font-size: 18px; }
+      }
     </style>
   </head>
   <body>
     <main class="wrap">
       <header>
-        <p class="eyebrow">Dorchester</p>
+        <p class="eyebrow">Dorchester &bull; Since 2013</p>
         <h1>El Nuevo Estilo</h1>
-        <p class="lede">Classic cuts, sharp fades, and a neighborhood staple in Dorchester. We keep you looking your best.</p>
-      </header>
-      <section class="grid">
-        <div class="card">
-          <h2>Quality Cuts, No Compromise.</h2>
-          <p>El Nuevo Estilo has been serving the Dorchester community with pride. We specialize in all hair types, offering everything from classic tapers and fades to beard trims and hot towel shaves.</p>
-          <a href="tel:6172889600" class="cta-button">Call to Book: (617) 288-9600</a>
+        <p class="lede">Cutting on Dorchester Ave for over a decade - fades, tapers, lineups and beard work, with a 5.0 rating from more than 300 reviews on Booksy.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="https://booksy.com/en-us/144462_el-nuevo-estilo-barbershop_barber-shop_22412_boston">Book on Booksy</a>
+          <a class="btn btn-ghost" href="tel:6175338572">Call (617) 533-8572</a>
         </div>
-        <div class="card">
-          <h2>218 Bowdoin St</h2>
-          <p>Dorchester, MA 02122</p>
-          <p><strong>Hours:</strong><br />Mon-Sat: 9am - 7pm<br />Sun: 10am - 4pm</p>
-          <a href="tel:6172889600" style="color: var(--accent); font-weight: bold;">(617) 288-9600</a>
+      </header>
+
+      <section class="grid">
+        <div>
+          <div class="card">
+            <span class="badge">Services</span>
+            <h2>Straightforward prices.</h2>
+            <table class="prices">
+              <tr><td>Men's haircut</td><td>$38</td></tr>
+              <tr><td>Haircut and beard</td><td>$43</td></tr>
+              <tr><td>Teens (13-18)</td><td>$33</td></tr>
+              <tr><td>Kids (1-12)</td><td>$30</td></tr>
+              <tr><td>Taper, lineup and shave</td><td>$30</td></tr>
+              <tr><td>Lineup and shave</td><td>$25</td></tr>
+              <tr><td>Lineup with beard</td><td>$25</td></tr>
+              <tr><td>Lineup</td><td>$20</td></tr>
+              <tr><td>Beard trim</td><td>$10</td></tr>
+              <tr><td>Eyebrows</td><td>$5</td></tr>
+            </table>
+          </div>
+
+          <div class="card">
+            <span class="badge">What people say</span>
+            <h2>5.0 stars, 300+ reviews on Booksy</h2>
+            <blockquote class="quote">"Best barber in town! Jos&eacute; is always consistent and cuts my hair exactly as I request."</blockquote>
+            <blockquote class="quote">"Great barber and excellent service every time. Always takes his time, pays attention to the details."</blockquote>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <span class="badge">The chairs</span>
+            <h2>Jos&eacute; and Wilson.</h2>
+            <p>Jos&eacute; Santos, master barber, and Wilson keep the shop running - the same two names you will see all over the reviews. Pick your barber when you book.</p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Find us</span>
+            <h2>967 Dorchester Ave</h2>
+            <p class="contact-lines">
+              967 Dorchester Ave<br />
+              Dorchester, MA 02125<br />
+              <a href="tel:6175338572">(617) 533-8572</a>
+            </p>
+            <p class="note"><a href="https://www.google.com/maps/search/?api=1&amp;query=El+Nuevo+Estilo+Barbershop+967+Dorchester+Ave+Boston+MA+02125">Directions on Google Maps</a></p>
+            <p class="note">Hours vary by day - <a href="https://booksy.com/en-us/144462_el-nuevo-estilo-barbershop_barber-shop_22412_boston">check Booksy</a> or call for today's.</p>
+          </div>
         </div>
       </section>
-      <footer>&copy; 2026 El Nuevo Estilo Barber Shop • 218 Bowdoin St, Dorchester, MA</footer>
+
+      <footer>
+        El Nuevo Estilo Barbershop &bull; 967 Dorchester Ave, Dorchester, MA 02125 &bull; (617) 533-8572
+      </footer>
     </main>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "El Nuevo Estilo Barbershop",
+      "description": "Barbershop on Dorchester Ave in Dorchester, Boston - fades, tapers, lineups and beard work. In the neighborhood since 2013.",
+      "telephone": "+16175338572",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "967 Dorchester Ave",
+        "addressLocality": "Boston",
+        "addressRegion": "MA",
+        "postalCode": "02125",
+        "addressCountry": "US"
+      },
+      "priceRange": "$5 - $43",
+      "sameAs": ["https://booksy.com/en-us/144462_el-nuevo-estilo-barbershop_barber-shop_22412_boston"]
+    }
+    </script>
   </body>
 </html>

@@ -3,59 +3,132 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WY Hair Salon & Barbershop | Hyde Park</title>
+    <title>WY Hair Salon &amp; Barbershop - Hyde Park, Boston</title>
+    <meta name="description" content="WY Hair Salon & Barbershop, 1276 Hyde Park Ave, Hyde Park. Salon and barbershop under one roof. Open weekdays from 9 am - call (617) 333-3453." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WY Hair Salon &amp; Barbershop" />
+    <meta property="og:description" content="Salon and barbershop under one roof on Hyde Park Ave. Open weekdays from 9 am - call (617) 333-3453." />
+    <meta property="og:site_name" content="WY Hair Salon &amp; Barbershop" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>" />
     <style>
       :root {
-        --bg: #121212;
-        --ink: #e2e8f0;
-        --muted: #94a3b8;
-        --accent: #64748b;
-        --card: #1e293b;
-        --line: #334155;
+        --bg: #faf7f2;
+        --panel: #ffffff;
+        --ink: #231f1a;
+        --muted: #6e675e;
+        --accent: #9a6a3f;
+        --line: #e7dfd3;
       }
       * { box-sizing: border-box; }
       body {
         margin: 0;
-        font-family: 'Inter', -apple-system, sans-serif;
+        font-family: Georgia, "Times New Roman", serif;
         color: var(--ink);
         background: var(--bg);
-        -webkit-font-smoothing: antialiased;
       }
-      .wrap { max-width: 1000px; margin: 0 auto; padding: 80px 24px; }
-      header { margin-bottom: 64px; }
-      .eyebrow { font-size: 13px; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
-      h1 { font-size: clamp(48px, 10vw, 84px); line-height: 0.9; margin: 0 0 24px; letter-spacing: -0.04em; font-weight: 800; }
-      .lede { font-size: 24px; line-height: 1.4; max-width: 700px; color: var(--muted); }
-      .grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; }
-      .card { background: var(--card); border: 1px solid var(--line); padding: 48px; border-radius: 4px; }
-      h2 { font-size: 32px; margin: 0 0 20px; font-weight: 700; letter-spacing: -0.02em; }
-      p { line-height: 1.6; margin: 0 0 20px; font-size: 19px; }
-      .cta { display: inline-block; background: var(--ink); color: var(--bg); padding: 20px 40px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 16px; }
-      footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--line); color: var(--accent); font-size: 14px; text-transform: uppercase; }
-      @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .wrap { padding: 40px 20px; } }
+      .wrap { max-width: 940px; margin: 0 auto; padding: 30px 20px 44px; }
+      header { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 26px; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .18em; font-size: 12px; color: var(--accent); margin: 0 0 10px; }
+      h1 { font-size: clamp(32px, 6vw, 54px); line-height: 1.05; margin: 0 0 14px; font-weight: 700; }
+      .lede { font-size: 20px; line-height: 1.5; max-width: 700px; margin: 0 0 18px; color: var(--muted); }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn { display: inline-block; text-decoration: none; border-radius: 10px; padding: 12px 18px; font-size: 16px; border: 1px solid var(--accent); }
+      .btn-solid { background: var(--accent); color: #fff; font-weight: bold; }
+      .btn-ghost { color: var(--accent); }
+      .grid { display: grid; grid-template-columns: 1.15fr .95fr; gap: 18px; align-items: start; }
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+      .card + .card { margin-top: 18px; }
+      h2 { font-size: 23px; margin: 0 0 12px; line-height: 1.2; }
+      p { line-height: 1.62; margin: 0 0 14px; }
+      p:last-child { margin-bottom: 0; }
+      ul { margin: 0; padding-left: 20px; line-height: 1.9; font-size: 17px; }
+      .badge { display: inline-block; background: #f1e7d8; color: var(--accent); border-radius: 999px; padding: 6px 11px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; }
+      .quote { border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 6px; font-style: italic; }
+      .note { color: var(--muted); font-size: 15px; }
+      .contact-lines { font-size: 17px; line-height: 1.9; }
+      footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 18px; color: var(--muted); font-size: 15px; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .lede { font-size: 18px; }
+      }
     </style>
   </head>
   <body>
     <main class="wrap">
       <header>
-        <p class="eyebrow">Hyde Park</p>
-        <h1>WY Hair Salon</h1>
-        <p class="lede">Precision styling and modern barbering in the heart of River St. We define the Hyde Park aesthetic.</p>
-      </header>
-      <section class="grid">
-        <div class="card">
-          <h2>Modern Precision.</h2>
-          <p>WY Hair Salon & Barbershop combines traditional technique with a clean, contemporary approach. From creative styling to sharp, technical fades, we ensure every client leaves with a look tailored to their lifestyle.</p>
-          <a href="tel:6173649472" class="cta">Call: (617) 364-9472</a>
+        <p class="eyebrow">Hyde Park &bull; Boston</p>
+        <h1>WY Hair Salon &amp; Barbershop</h1>
+        <p class="lede">Salon and barbershop under one roof on Hyde Park Ave - barber cuts and fades on one side, cuts and styling on the other, all at one address.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="tel:6173333453">Call (617) 333-3453</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=WY+Hair+Salon+%26+Barbershop+1276+Hyde+Park+Ave+Boston+MA+02136">Get directions</a>
         </div>
-        <div class="card">
-          <h2>1236 River St</h2>
-          <p>Hyde Park, MA 02136</p>
-          <p><strong>Hours:</strong><br />Tue-Sat: 9am - 6pm</p>
-          <a href="tel:6173649472" style="color: var(--accent); font-weight: bold;">(617) 364-9472</a>
+      </header>
+
+      <section class="grid">
+        <div>
+          <div class="card">
+            <span class="badge">One roof</span>
+            <h2>Salon chairs and barber chairs.</h2>
+            <p>Most places make you choose - a salon for styling or a barbershop for a fade. WY is both: barber cuts and lineups on one side, cuts and styling on the other, so one stop covers everybody.</p>
+          </div>
+
+          <div class="card">
+            <span class="badge">What people say</span>
+            <blockquote class="quote">"Guy with the blonde hair A1 takes his time to detail and perfection"</blockquote>
+            <p class="note">From a customer review on Birdeye.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <span class="badge">Hours</span>
+            <h2>Weekdays from 9 am.</h2>
+            <p class="contact-lines">Monday - Friday, opening at 9:00 am.</p>
+            <p class="note">Closing time varies - call <a href="tel:6173333453">(617) 333-3453</a> to confirm today's hours before heading over.</p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Find us</span>
+            <h2>1276 Hyde Park Ave</h2>
+            <p class="contact-lines">
+              1276 Hyde Park Ave<br />
+              Hyde Park, MA 02136<br />
+              <a href="tel:6173333453">(617) 333-3453</a>
+            </p>
+            <p class="note"><a href="https://www.google.com/maps/search/?api=1&amp;query=WY+Hair+Salon+%26+Barbershop+1276+Hyde+Park+Ave+Boston+MA+02136">Directions on Google Maps</a></p>
+          </div>
         </div>
       </section>
-      <footer>WY Hair Salon & Barbershop • Boston, MA</footer>
+
+      <footer>
+        WY Hair Salon &amp; Barbershop &bull; 1276 Hyde Park Ave, Hyde Park, MA 02136 &bull; (617) 333-3453
+      </footer>
     </main>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "WY Hair Salon & Barbershop",
+      "description": "Hair salon and barbershop under one roof on Hyde Park Ave in Boston.",
+      "telephone": "+16173333453",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1276 Hyde Park Ave",
+        "addressLocality": "Boston",
+        "addressRegion": "MA",
+        "postalCode": "02136",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00"
+      }]
+    }
+    </script>
   </body>
 </html>
