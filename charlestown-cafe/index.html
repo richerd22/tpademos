@@ -3,59 +3,113 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Charlestown Cafe & Restaurant</title>
+    <title>Charlestown Cafe &amp; Restaurant - breakfast and lunch on Arlington Ave</title>
+    <meta name="description" content="Neighborhood breakfast and lunch spot at 78 Arlington Ave, Charlestown. Egg sandwiches, the C-Town Breakfast, steak tips, salads and sandwiches." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Charlestown Cafe &amp; Restaurant" />
+    <meta property="og:description" content="Neighborhood breakfast and lunch in Charlestown - egg sandwiches, the C-Town Breakfast, steak tips, salads and more. 78 Arlington Ave." />
+    <meta property="og:site_name" content="Charlestown Cafe &amp; Restaurant" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127859;</text></svg>" />
     <style>
       :root {
-        --bg: #fffdf5;
-        --ink: #2d2a26;
-        --muted: #5e5a54;
-        --accent: #15803d;
-        --card: #ffffff;
-        --line: #efebdf;
+        --bg: #fdf8f0;
+        --ink: #33281e;
+        --muted: #6b5d4d;
+        --accent: #b3562a;
+        --line: #ecdfc9;
+        --card: #fffdf8;
       }
       * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: 'Georgia', serif;
-        color: var(--ink);
-        background: var(--bg);
-      }
-      .wrap { max-width: 960px; margin: 0 auto; padding: 60px 20px; }
-      header { text-align: center; margin-bottom: 60px; }
-      h1 { font-size: clamp(32px, 6vw, 54px); margin: 0 0 10px; letter-spacing: -0.02em; }
-      .eyebrow { color: var(--accent); font-weight: 700; font-family: sans-serif; font-size: 14px; text-transform: uppercase; margin-bottom: 20px; }
-      .lede { font-size: 20px; color: var(--muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-      .card { background: var(--card); border: 1px solid var(--line); padding: 48px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-      h2 { font-size: 24px; margin-top: 0; }
-      .cta { display: inline-block; background: var(--accent); color: white; padding: 14px 28px; text-decoration: none; font-family: sans-serif; font-weight: 700; font-size: 16px; border-radius: 4px; }
-      footer { text-align: center; margin-top: 40px; color: var(--muted); font-family: sans-serif; font-size: 14px; }
-      @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .card { padding: 32px 20px; } }
+      body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); background: var(--bg); }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 40px; }
+      header { border-bottom: 3px double var(--line); padding-bottom: 22px; margin-bottom: 26px; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; color: var(--accent); margin: 0 0 10px; }
+      h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.02; margin: 0 0 14px; }
+      .lede { font-size: 19px; line-height: 1.55; max-width: 700px; margin: 0 0 18px; color: var(--muted); }
+      .cta { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 8px; font-size: 17px; }
+      .cta:hover { opacity: .92; }
+      .grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; align-items: start; }
+      .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+      .card + .card { margin-top: 18px; }
+      h2 { font-size: 23px; margin: 0 0 12px; }
+      p { line-height: 1.6; margin: 0 0 13px; }
+      p:last-child { margin-bottom: 0; }
+      .badge { display: inline-block; background: #f6e8d8; color: var(--accent); border-radius: 999px; padding: 6px 11px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; }
+      .menu-item { border-top: 1px solid var(--line); padding: 9px 0; }
+      .menu-item:first-of-type { border-top: 0; padding-top: 0; }
+      .menu-item strong { font-size: 17px; }
+      .note { color: var(--muted); font-size: 15px; }
+      .contact-lines { font-size: 17px; line-height: 1.9; }
+      footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 18px; color: var(--muted); font-size: 15px; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      @media (max-width: 740px) { .grid { grid-template-columns: 1fr; } .lede { font-size: 17px; } }
     </style>
   </head>
   <body>
     <main class="wrap">
       <header>
-        <p class="eyebrow">Charlestown</p>
-        <h1>Charlestown Cafe</h1>
-        <p class="lede">A local favorite for fresh coffee, hearty breakfast, and homestyle lunch in the heart of Charlestown.</p>
+        <p class="eyebrow">Charlestown &bull; breakfast &amp; lunch</p>
+        <h1>Charlestown Cafe &amp; Restaurant</h1>
+        <p class="lede">The neighborhood spot on Arlington Ave - hot breakfast off the griddle, honest lunch plates, and coffee that keeps coming.</p>
+        <a class="cta" href="tel:+16172425100">Call (617) 242-5100</a>
       </header>
-      <section class="card">
-        <div class="grid">
-          <div>
-            <h2>Fresh & Simple</h2>
-            <p>At Charlestown Cafe, we believe in real food and great service. Whether you're stopping in for your morning coffee or bringing the family for lunch, we've got a table for you.</p>
-            <a href="tel:6172429400" class="cta">Call to Order: (617) 242-9400</a>
+
+      <section class="grid">
+        <div>
+          <div class="card">
+            <span class="badge">Breakfast</span>
+            <h2>Off the griddle</h2>
+            <div class="menu-item"><strong>The C-Town Breakfast</strong><br /><span class="note">Two eggs with bacon and sausage, toast, home fries, and your choice of pancakes or French toast.</span></div>
+            <div class="menu-item"><strong>Egg &amp; cheese sandwich</strong><br /><span class="note">Add bacon, sausage or ham. On your pick of bread.</span></div>
+            <div class="menu-item"><strong>Pancakes &amp; French toast</strong><br /><span class="note">The classics, done right.</span></div>
           </div>
-          <div>
-            <h2>104 Main St</h2>
-            <p>Charlestown, MA 02129</p>
-            <p><strong>Hours:</strong><br />Daily: 7am - 3pm</p>
-            <a href="tel:6172429400" style="color: var(--accent); font-weight: bold;">(617) 242-9400</a>
+
+          <div class="card">
+            <span class="badge">Lunch</span>
+            <h2>Plates, sandwiches, salads</h2>
+            <div class="menu-item"><strong>Steak tips plate</strong></div>
+            <div class="menu-item"><strong>Fish &amp; chips</strong></div>
+            <div class="menu-item"><strong>Steak &amp; cheese sandwich</strong></div>
+            <div class="menu-item"><strong>Cheeseburgers, BLTs &amp; club sandwiches</strong></div>
+            <div class="menu-item"><strong>Garden &amp; chicken Caesar salads</strong></div>
+            <p class="note" style="margin-top:12px;">Plus daily lunch specials and pasta - call to hear what's on today.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <span class="badge">Find us</span>
+            <h2>On Arlington Ave</h2>
+            <p class="contact-lines">
+              <a href="https://maps.google.com/?q=78+Arlington+Ave,+Charlestown,+MA+02129">78 Arlington Ave<br />Charlestown, MA 02129</a><br />
+              <a href="tel:+16172425100">(617) 242-5100</a>
+            </p>
+            <p class="note">Call ahead and your order is ready when you walk in.</p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Hours</span>
+            <h2>Stop by</h2>
+            <p>Give us a ring at <a href="tel:+16172425100">(617) 242-5100</a> for today's hours - we'll pick up.</p>
           </div>
         </div>
       </section>
-      <footer>&copy; 2026 Charlestown Cafe & Restaurant</footer>
+
+      <footer>
+        Charlestown Cafe &amp; Restaurant &bull; 78 Arlington Ave, Charlestown, MA 02129 &bull; (617) 242-5100
+      </footer>
     </main>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Charlestown Cafe & Restaurant",
+      "servesCuisine": ["Breakfast", "American"],
+      "telephone": "+16172425100",
+      "address": { "@type": "PostalAddress", "streetAddress": "78 Arlington Ave", "addressLocality": "Charlestown", "addressRegion": "MA", "postalCode": "02129", "addressCountry": "US" }
+    }
+    </script>
   </body>
 </html>

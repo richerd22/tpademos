@@ -3,57 +3,107 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Logan Square Barbershop | Hyde Park</title>
+    <title>Logan Square Barber Shop - Hyde Park, Boston</title>
+    <meta name="description" content="Old-school neighborhood barber shop at 1 Fairmount Ave in Logan Square, Hyde Park. Walk in, get a proper cut, talk a little sports." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Logan Square Barber Shop" />
+    <meta property="og:description" content="Old-school barber shop right on Logan Square in Hyde Park. 1 Fairmount Ave - call (617) 364-9555." />
+    <meta property="og:site_name" content="Logan Square Barber Shop" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128136;</text></svg>" />
     <style>
       :root {
-        --bg: #1c1917;
-        --ink: #f5f5f4;
-        --muted: #a8a29e;
-        --accent: #d97706;
-        --card: #292524;
-        --line: #44403c;
+        --bg: #f4f4ef;
+        --ink: #1d2b24;
+        --muted: #55605a;
+        --accent: #1f5c40;
+        --line: #dfe0d6;
+        --card: #fcfcf9;
       }
       * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: 'Garamond', serif;
-        color: var(--ink);
-        background: var(--bg);
-      }
-      .wrap { max-width: 1000px; margin: 0 auto; padding: 80px 24px; }
-      header { text-align: center; margin-bottom: 80px; }
-      .eyebrow { font-size: 14px; color: var(--accent); margin-bottom: 20px; font-family: sans-serif; font-weight: 600; text-transform: uppercase; }
-      h1 { font-size: clamp(40px, 8vw, 72px); margin: 0 0 24px; font-weight: 500; font-style: italic; }
-      .lede { font-size: 22px; line-height: 1.5; max-width: 650px; margin: 0 auto; color: var(--muted); }
-      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-      .card { background: var(--card); border: 1px solid var(--line); padding: 40px; }
-      h2 { font-size: 32px; margin: 0 0 20px; font-weight: 400; border-bottom: 1px solid var(--accent); padding-bottom: 12px; display: inline-block; }
-      p { line-height: 1.7; margin: 0 0 20px; font-size: 18px; }
-      .cta { display: block; text-align: center; border: 1px solid var(--accent); color: var(--accent); padding: 18px; text-decoration: none; font-weight: 700; font-family: sans-serif; text-transform: uppercase; }
-      footer { margin-top: 80px; text-align: center; color: var(--muted); font-size: 14px; text-transform: uppercase; font-family: sans-serif; }
+      body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); background: var(--bg); }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 28px 20px 40px; }
+      header { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 26px; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; color: var(--accent); margin: 0 0 10px; }
+      h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.02; margin: 0 0 14px; }
+      .lede { font-size: 19px; line-height: 1.55; max-width: 680px; margin: 0 0 18px; color: var(--muted); }
+      .cta { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 8px; font-size: 17px; }
+      .cta:hover { opacity: .92; }
+      .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; align-items: start; }
+      .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+      .card + .card { margin-top: 18px; }
+      h2 { font-size: 23px; margin: 0 0 12px; }
+      p { line-height: 1.62; margin: 0 0 13px; }
+      p:last-child { margin-bottom: 0; }
+      .badge { display: inline-block; background: #e4ede7; color: var(--accent); border-radius: 999px; padding: 6px 11px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; }
+      .hours { width: 100%; border-collapse: collapse; font-size: 16px; }
+      .hours td { padding: 7px 0; border-top: 1px solid var(--line); }
+      .hours tr:first-child td { border-top: 0; padding-top: 0; }
+      .hours td:last-child { text-align: right; color: var(--muted); }
+      .note { color: var(--muted); font-size: 15px; }
+      .contact-lines { font-size: 17px; line-height: 1.9; }
+      footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 18px; color: var(--muted); font-size: 15px; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      @media (max-width: 740px) { .grid { grid-template-columns: 1fr; } .lede { font-size: 17px; } }
     </style>
   </head>
   <body>
     <main class="wrap">
       <header>
-        <p class="eyebrow">Hyde Park</p>
-        <h1>Logan Square Barbershop</h1>
-        <p class="lede">A warm, neighborhood staple where the conversation is as good as the cut. Classic barbering for the Logan Square community.</p>
+        <p class="eyebrow">Hyde Park &bull; Logan Square &bull; old school</p>
+        <h1>Logan Square Barber Shop</h1>
+        <p class="lede">Right on the corner at Logan Square. A proper cut, a little sports talk, no fuss - the kind of barber shop the neighborhood keeps coming back to.</p>
+        <a class="cta" href="tel:+16173649555">Call (617) 364-9555</a>
       </header>
+
       <section class="grid">
-        <div class="card">
-          <h2>The Tradition.</h2>
-          <p>We believe in the timeless value of a local barbershop. Logan Square Barbershop is built on warm amber tones, mahogany wood, and the steady hand of experienced barbers who know the neighborhood by heart.</p>
-          <a href="tel:6173619575" class="cta">Call: (617) 361-9575</a>
+        <div>
+          <div class="card">
+            <span class="badge">The shop</span>
+            <h2>No fuss, just a good cut</h2>
+            <p>This is an old-school barber shop, and that is the point. Customers describe it their own way - convenient, a cool environment, a great guys&rsquo; place for a cut rather than a foo-foo salon.</p>
+            <p>Classic barbering - sit down, say how you like it, and it gets done right.</p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Hours</span>
+            <h2>When to come by</h2>
+            <table class="hours">
+              <tr><td>Tuesday - Friday</td><td>8 am - 5 pm</td></tr>
+              <tr><td>Saturday</td><td>7 am - 4 pm</td></tr>
+              <tr><td>Sunday &amp; Monday</td><td>Closed</td></tr>
+            </table>
+            <p class="note" style="margin-top:12px;">Hours can shift - a quick call to <a href="tel:+16173649555">(617) 364-9555</a> confirms today's.</p>
+          </div>
         </div>
-        <div class="card">
-          <h2>1 Logan Square</h2>
-          <p>Hyde Park, MA 02136</p>
-          <p><strong>Hours:</strong><br />Mon-Fri: 8am - 6pm<br />Sat: 7am - 4pm</p>
-          <a href="tel:6173619575" style="color: var(--accent); font-weight: bold;">(617) 361-9575</a>
+
+        <div>
+          <div class="card">
+            <span class="badge">Find us</span>
+            <h2>On the square</h2>
+            <p class="contact-lines">
+              <a href="https://maps.google.com/?q=1+Fairmount+Ave,+Hyde+Park,+MA+02136">1 Fairmount Ave<br />Hyde Park, MA 02136</a><br />
+              <a href="tel:+16173649555">(617) 364-9555</a>
+            </p>
+            <p class="note">Right on the corner at Logan Square.</p>
+          </div>
         </div>
       </section>
-      <footer>Logan Square Barbershop • Hyde Park, MA</footer>
+
+      <footer>
+        Logan Square Barber Shop &bull; 1 Fairmount Ave, Hyde Park, MA 02136 &bull; (617) 364-9555
+      </footer>
     </main>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "Logan Square Barber Shop",
+      "telephone": "+16173649555",
+      "address": { "@type": "PostalAddress", "streetAddress": "1 Fairmount Ave", "addressLocality": "Hyde Park", "addressRegion": "MA", "postalCode": "02136", "addressCountry": "US" },
+      "openingHours": ["Tu-Fr 08:00-17:00", "Sa 07:00-16:00"]
+    }
+    </script>
   </body>
 </html>
