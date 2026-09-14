@@ -1,99 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Robert's Hair Styling — East Boston</title>
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--amber:#B5621B;--amber-light:#d4762a;--amber-dark:#8a4a12;--cream:#FBF7F3;--dark:#1a1008;--gray:#6b5b4e;--light-border:#e8ddd4}
-    body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--cream);color:var(--dark);-webkit-font-smoothing:antialiased}
-    nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px solid var(--light-border);display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
-    .nav-name{font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--dark)}
-    .nav-sub{font-size:11px;color:var(--gray);letter-spacing:.08em}
-    .nav-cta{background:var(--amber);color:#fff;padding:9px 20px;font-size:13px;font-weight:500;letter-spacing:.04em;text-decoration:none;transition:background .2s}
-    .nav-cta:hover{background:var(--amber-light)}
-    .hero{background:var(--amber);color:#fff;padding:88px 24px 80px;text-align:center}
-    .hero-eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-bottom:20px}
-    .hero h1{font-size:clamp(36px,7vw,60px);font-weight:300;letter-spacing:-.02em;line-height:1.08;margin-bottom:20px}
-    .hero h1 strong{font-weight:700}
-    .hero-sub{font-size:16px;opacity:.8;margin-bottom:36px;line-height:1.5}
-    .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-    .btn-white{display:inline-block;padding:13px 28px;background:#fff;color:var(--amber);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:opacity .2s}
-    .btn-white:hover{opacity:.85}
-    .btn-outline{display:inline-block;padding:13px 28px;border:1.5px solid rgba(255,255,255,.5);color:#fff;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:border-color .2s}
-    .btn-outline:hover{border-color:#fff}
-    .strip{display:flex;flex-wrap:wrap;background:#fff;border-bottom:1px solid var(--light-border)}
-    .strip-item{flex:1;min-width:150px;padding:24px 20px;text-align:center;border-right:1px solid var(--light-border)}
-    .strip-item:last-child{border-right:none}
-    .strip-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gray);margin-bottom:5px}
-    .strip-value{font-size:14px;font-weight:600;color:var(--dark)}
-    .section{padding:64px 24px;max-width:900px;margin:0 auto}
-    .section-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;font-weight:500}
-    .section h2{font-size:clamp(24px,4vw,36px);font-weight:300;letter-spacing:-.01em;margin-bottom:20px;line-height:1.2}
-    .section p{font-size:16px;color:#5a4a3a;line-height:1.7;max-width:600px}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--light-border);margin-top:40px}
-    .service{background:var(--cream);padding:28px 24px}
-    .service-name{font-size:16px;font-weight:500;margin-bottom:6px;color:var(--dark)}
-    .service-desc{font-size:14px;color:var(--gray);line-height:1.5}
-    .contact{background:var(--dark);color:#fff;padding:72px 24px;text-align:center}
-    .contact h2{font-size:clamp(28px,5vw,44px);font-weight:300;margin-bottom:12px}
-    .contact p{font-size:16px;opacity:.6;margin-bottom:40px}
-    .contact-phone{font-size:clamp(28px,6vw,52px);font-weight:300;letter-spacing:-.02em;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:4px;display:inline-block;margin-bottom:32px;transition:border-color .2s}
-    .contact-phone:hover{border-color:var(--amber)}
-    .hours-grid{display:inline-flex;flex-direction:column;gap:6px;text-align:left;margin-top:8px}
-    .hour-row{font-size:14px;opacity:.55}
-    footer{background:var(--amber-dark);color:rgba(255,255,255,.4);text-align:center;padding:20px 24px;font-size:12px;letter-spacing:.06em}
-  </style>
-</head>
-<body>
-  <nav>
-    <div>
-      <p class="nav-name">Robert's Hair Styling</p>
-      <p class="nav-sub">East Boston</p>
-    </div>
-    <a href="tel:6175610048" class="nav-cta">Call Now</a>
-  </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robert's Hair Styling - 176 Sumner St, East Boston</title>
+    <meta name="description" content="Old-school neighborhood barbershop on Sumner St in East Boston. Haircuts, styling, beard trims and head shaves. Call (617) 561-0048." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robert's Hair Styling" />
+    <meta property="og:description" content="Old-school neighborhood barbershop on Sumner St in East Boston. Haircuts, styling, beard trims and head shaves." />
+    <meta property="og:site_name" content="Robert's Hair Styling" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>" />
+    <style>
+      :root {
+        --bg: #f7f2e9;
+        --ink: #26221d;
+        --muted: #6b6156;
+        --accent: #a4362c;
+        --accent-dark: #7e2a22;
+        --line: #e4d9c8;
+        --panel: #fffbf3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      .stripe { height: 8px; background: repeating-linear-gradient(-45deg, var(--accent) 0 14px, #fffbf3 14px 28px, #33415c 28px 42px, #fffbf3 42px 56px); }
+      .wrap { max-width: 920px; margin: 0 auto; padding: 30px 20px 44px; }
+      header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 26px; }
+      .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; color: var(--accent); margin: 0 0 12px; }
+      h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.02; margin: 0 0 14px; }
+      .lede { font-size: 19px; line-height: 1.55; max-width: 660px; margin: 0 0 20px; color: var(--muted); }
+      .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+      .btn { display: inline-block; padding: 13px 22px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; font-family: Arial, sans-serif; }
+      .btn-primary { background: var(--accent); color: #fffbf3; }
+      .btn-primary:hover { background: var(--accent-dark); }
+      .btn-ghost { border: 1px solid var(--ink); color: var(--ink); }
+      .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; align-items: start; }
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+      .card + .card { margin-top: 18px; }
+      h2 { font-size: 22px; margin: 0 0 12px; }
+      p { line-height: 1.62; margin: 0 0 13px; }
+      p:last-child { margin-bottom: 0; }
+      ul { margin: 0; padding-left: 20px; line-height: 1.8; }
+      .badge { display: inline-block; background: #f2e2d8; color: var(--accent); border-radius: 999px; padding: 6px 12px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; font-family: Arial, sans-serif; }
+      .hours-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+      .hours-table td { padding: 7px 0; border-bottom: 1px solid var(--line); }
+      .hours-table tr:last-child td { border-bottom: 0; }
+      .hours-table td:last-child { text-align: right; color: var(--muted); }
+      .note { color: var(--muted); font-size: 14px; }
+      blockquote { margin: 0 0 16px; padding-left: 14px; border-left: 3px solid var(--accent); font-style: italic; line-height: 1.55; }
+      blockquote:last-child { margin-bottom: 0; }
+      .contact-lines { font-size: 17px; line-height: 2; }
+      a { color: var(--accent); }
+      a:hover { text-decoration: none; }
+      footer { border-top: 1px solid var(--line); margin-top: 30px; padding-top: 18px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 740px) {
+        .grid { grid-template-columns: 1fr; }
+        .lede { font-size: 17px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stripe"></div>
+    <main class="wrap">
+      <header>
+        <p class="eyebrow">East Boston &bull; Sumner St</p>
+        <h1>Robert's Hair Styling</h1>
+        <p class="lede">The barbershop Sumner Street knows by name - classic cuts and styling in a shop where regulars are the rule, not the exception.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:6175610048">Call (617) 561-0048</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Robert%27s+Hair+Styling+176+Sumner+St+East+Boston+MA+02128">Get Directions</a>
+        </div>
+      </header>
 
-  <section class="hero">
-    <p class="hero-eyebrow">East Boston · 176 Sumner St</p>
-    <h1>Trusted styling.<br><strong>For years.</strong></h1>
-    <p class="hero-sub">A neighborhood institution on Sumner Street.<br>Quality cuts with care.</p>
-    <div class="hero-actions">
-      <a href="tel:6175610048" class="btn-white">Call (617) 561-0048</a>
-      <a href="https://maps.google.com/?q=176+Sumner+St+East+Boston+MA" class="btn-outline">Get Directions</a>
-    </div>
-  </section>
+      <section class="grid">
+        <div>
+          <div class="card">
+            <span class="badge">The neighborhood's word</span>
+            <h2>An Eastie fixture</h2>
+            <blockquote>"The store itself goes back over 60 years or more. In the old days it was the same warm barber shop with the pole and all."</blockquote>
+            <blockquote>"A blend between the new barbers and the old neighborhood barbers... everyone who enters is a friend and long timer."</blockquote>
+            <p class="note">From customer reviews.</p>
+          </div>
 
-  <div class="strip">
-    <div class="strip-item"><p class="strip-label">Address</p><p class="strip-value">176 Sumner St, Eastie</p></div>
-    <div class="strip-item"><p class="strip-label">Phone</p><p class="strip-value">(617) 561-0048</p></div>
-    <div class="strip-item"><p class="strip-label">Neighborhood</p><p class="strip-value">East Boston</p></div>
-    <div class="strip-item"><p class="strip-label">Walk-ins</p><p class="strip-value">Welcome</p></div>
-  </div>
+          <div class="card">
+            <span class="badge">Services</span>
+            <h2>In the chair</h2>
+            <ul>
+              <li>Haircuts - classic and current</li>
+              <li>Hair styling</li>
+              <li>Beard trims and shaping</li>
+              <li>Head shaves</li>
+            </ul>
+            <p class="note" style="margin-top:14px;">Call for pricing and today's availability.</p>
+          </div>
+        </div>
 
-  <div class="section">
-    <p class="section-label">About</p>
-    <h2>An East Boston<br>staple.</h2>
-    <p>Robert's Hair Styling has been part of Sumner Street for years. A trusted name in East Boston for quality haircuts, styling, and care — for the whole family.</p>
+        <div>
+          <div class="card">
+            <span class="badge">Find us</span>
+            <h2>176 Sumner St</h2>
+            <p class="contact-lines">
+              176 Sumner St<br />
+              East Boston, MA 02128<br />
+              <a href="tel:6175610048">(617) 561-0048</a>
+            </p>
+          </div>
 
-    <div class="services">
-      <div class="service"><p class="service-name">Haircuts</p><p class="service-desc">For men, women, and children</p></div>
-      <div class="service"><p class="service-name">Styling</p><p class="service-desc">Professional styling for any occasion</p></div>
-      <div class="service"><p class="service-name">Beard &amp; Trim</p><p class="service-desc">Clean shaping and grooming</p></div>
-      <div class="service"><p class="service-name">Color</p><p class="service-desc">Color and treatment services available</p></div>
-    </div>
-  </div>
+          <div class="card">
+            <span class="badge">Hours</span>
+            <h2>When we're open</h2>
+            <table class="hours-table">
+              <tr><td>Mon</td><td>Closed</td></tr>
+              <tr><td>Tue - Fri</td><td>10:00 am - 6:00 pm</td></tr>
+              <tr><td>Saturday</td><td>9:00 am - 5:00 pm</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
+            <p class="note" style="margin-top:14px;">Call to confirm before you head over.</p>
+          </div>
+        </div>
+      </section>
 
-  <div class="contact">
-    <h2>Visit us today.</h2>
-    <p>176 Sumner St, East Boston, MA 02128</p>
-    <a href="tel:6175610048" class="contact-phone">(617) 561-0048</a>
-    <div class="hours-grid">
-      <span class="hour-row">Call for current hours</span>
-    </div>
-  </div>
-
-  <footer>© Robert's Hair Styling · East Boston</footer>
-</body>
+      <footer>
+        Robert's Hair Styling &bull; 176 Sumner St, East Boston, MA 02128 &bull; (617) 561-0048
+      </footer>
+    </main>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Barbershop",
+      "name": "Robert's Hair Styling",
+      "telephone": "+16175610048",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "176 Sumner St",
+        "addressLocality": "East Boston",
+        "addressRegion": "MA",
+        "postalCode": "02128",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
+      ]
+    }
+    </script>
+  </body>
 </html>
