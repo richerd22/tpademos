@@ -3,7 +3,30 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>D'Friends Barber Shop — Jamaica Plain</title>
+  <title>D'Friends Barber Shop - Jamaica Plain</title>
+  <meta property="og:title" content="D'Friends Barber Shop - Jamaica Plain"/>
+  <meta property="og:description" content="Quality cuts on Centre Street. Open 7 days, walk-ins welcome. Call (617) 524-3420."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://demos.richardweb.site/dfriends/"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="description" content="D'Friends Barber Shop, 366 Centre St, Jamaica Plain. Haircuts, fades, beard trims, kids cuts. Mon-Sat 9-7, Sun 9-6."/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "D'Friends Barber Shop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "366 Centre St #1237",
+      "addressLocality": "Jamaica Plain",
+      "addressRegion": "MA",
+      "postalCode": "02130"
+    },
+    "telephone": "+16175243420",
+    "openingHours": ["Mo-Sa 09:00-19:00", "Su 09:00-18:00"],
+    "url": "https://demos.richardweb.site/dfriends/"
+  }
+  </script>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--green:#2D6A4F;--green-light:#3A8A65;--green-dark:#1E4D39;--off-white:#F9F7F4;--dark:#111;--gray:#666;--light-border:#e8e4df}
@@ -35,6 +58,9 @@
     .service{background:var(--off-white);padding:28px 24px}
     .service-name{font-size:16px;font-weight:500;margin-bottom:6px}
     .service-desc{font-size:14px;color:var(--gray);line-height:1.5}
+    .quote{background:#fff;border-left:3px solid var(--green);padding:28px 32px;margin-top:40px;max-width:600px}
+    .quote p{font-size:18px;font-style:italic;color:#333;line-height:1.6;margin-bottom:12px}
+    .quote-src{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
     .contact{background:var(--dark);color:#fff;padding:72px 24px;text-align:center}
     .contact h2{font-size:clamp(28px,5vw,44px);font-weight:300;margin-bottom:12px}
     .contact p{font-size:16px;opacity:.65;margin-bottom:40px}
@@ -63,8 +89,8 @@
 
   <div class="strip">
     <div class="strip-item"><p class="strip-label">Address</p><p class="strip-value">366 Centre St, JP</p></div>
-    <div class="strip-item"><p class="strip-label">Mon – Sat</p><p class="strip-value">9am – 7pm</p></div>
-    <div class="strip-item"><p class="strip-label">Sunday</p><p class="strip-value">9am – 6pm</p></div>
+    <div class="strip-item"><p class="strip-label">Mon - Sat</p><p class="strip-value">9am - 7pm</p></div>
+    <div class="strip-item"><p class="strip-label">Sunday</p><p class="strip-value">9am - 6pm</p></div>
     <div class="strip-item"><p class="strip-label">Walk-ins</p><p class="strip-value">Always Welcome</p></div>
   </div>
 
@@ -81,13 +107,22 @@
     </div>
   </div>
 
+  <div class="section">
+    <p class="section-label">What customers say</p>
+    <h2>Word on<br>Centre Street.</h2>
+    <div class="quote">
+      <p>&ldquo;This barbershop gives you an outstanding cut and fade.&rdquo;</p>
+      <p class="quote-src">From customer reviews</p>
+    </div>
+  </div>
+
   <div class="contact">
     <h2>Come see us.</h2>
     <p>366 Centre St, Jamaica Plain, MA 02130</p>
     <a href="tel:6175243420" class="contact-phone">(617) 524-3420</a>
     <div class="hours-grid">
-      <span class="hour-row">Monday – Saturday &nbsp;&nbsp;9am – 7pm</span>
-      <span class="hour-row">Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9am – 6pm</span>
+      <span class="hour-row">Monday - Saturday &nbsp;&nbsp;9am - 7pm</span>
+      <span class="hour-row">Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9am - 6pm</span>
     </div>
   </div>
 
